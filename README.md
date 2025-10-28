@@ -1,4 +1,6 @@
 <h1>edunotes.net: JEE Handwritten Notes 📝</h1>
+To view the website just Google : edunotes.net 
+
 Welcome to EduNotes, a comprehensive repository of handwritten notes for students preparing for the Joint Entrance Examination (JEE), including JEE Main and JEE Advanced. All notes are organized by subject and topic for easy access.
 
 <h2>Accessing the Notes</h2>
