@@ -1,0 +1,67 @@
+body {
+  background-color: #000;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* container class can be defined before each subject section like this <div class="container"> */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* container class can be defined before each subject section like this <div class="notes-list"> */ 
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* note-item class can be defined before each topic names like this <div class="note-item"> */
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  border: 1px solid #1e3a8a;
+}
+
+
+.note-item span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* buttons class can be defined before the drive links undder each topic like this <div class="buttons">*/
+.buttons {
+  display: flex;
+  gap: 6px;
+}
+
+/* view-btn class can be defined before the eye logo button like this class="view-btn" */
+/* download-btn class can be defined before the download logo button like this download class="download-btn" */
+.view-btn,
+.download-btn {
+  padding: 6px 10px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+/* view-btn class can be defined before the eye logo button like this class="view-btn" */
+.view-btn {
+  background-color: #2563eb;
+}
+
+/* download-btn class can be defined before the download logo button like this download class="download-btn" */
+.download-btn {
+  background-color: #16a34a;
+}
