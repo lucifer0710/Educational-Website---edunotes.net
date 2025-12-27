@@ -6,707 +6,787 @@ Created a website where JEE students can view or download JEE handwritten notes
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edunotes</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Edunotes - JEE Study Materials</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+    }
+    
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+    
+    .notes-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .note-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2d2d2d;
+      padding: 12px 15px;
+      border-radius: 6px;
+      transition: background-color 0.2s;
+    }
+    
+    .note-item:hover {
+      background-color: #353535;
+    }
+    
+    .note-item span {
+      font-size: 15px;
+    }
+    
+    .button-group {
+      display: flex;
+      gap: 5px;
+    }
+    
+    .btn {
+      padding: 6px 10px;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      transition: transform 0.1s, opacity 0.2s;
+    }
+    
+    .btn:hover {
+      opacity: 0.85;
+      transform: translateY(-1px);
+    }
+    
+    .btn:active {
+      transform: translateY(0);
+    }
+    
+    .btn-view {
+      background-color: #2563eb;
+    }
+    
+    .btn-download {
+      background-color: #16a34a;
+    }
+  </style>
 </head>
 <body>
-<div style="max-width: 800px; margin: 40px auto; font-family: sans-serif;">
-  <h2 style="color: white; text-align: center; font-size: 28px; margin-bottom: 30px;">Physics EduNotes</h2>
+  <!-- Physics Notes Section -->
+  <div class="container">
+    <h2>Physics EduNotes</h2>
+    <div class="notes-list">
+      <div class="note-item">
+        <span>Kinematics</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
 
-  <div style="display: flex; flex-direction: column; gap: 8px;">
-  
-    
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Kinematics</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1CsyMorjmywfOePR38Py25Yp5JRieRuYh/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1CsyMorjmywfOePR38Py25Yp5JRieRuYh&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
+      <div class="note-item">
+        <span>Relative Motion</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>NLM</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Friction</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Work Power Energy</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Circular Motion</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Modern Physics & Nuclear Physics</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Semiconductors</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>EMW</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Unit & Dimensions</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Error & Measurements</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>KTG & Thermodynamics</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>SHM</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Current Electricity</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Heat Transfer</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Alternating Current</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Electrostatics</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Gravitation</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Magnetism (EMF)</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>EMI</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Ray Optics</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Capacitance</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Fluid Mechanics</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Elasticity & Viscosity</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Surface Tension</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Wave Optics</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Wave on String & Sound Waves</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>COM</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Calorimetry & Thermal Expansion</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Rotational Motion</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Short Notes</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Relative Motion</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1oTD_nyHizXu6WkvFJ9AWX7NOuUBGT5ow/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1oTD_nyHizXu6WkvFJ9AWX7NOuUBGT5ow&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
+  <!-- Chemistry Notes Section -->
+  <div class="container">
+    <h2>Chemistry EduNotes</h2>
+    <div class="notes-list">
+      <div class="note-item">
+        <span>Mole Concept</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Atomic Structure</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Periodic Table</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Chemical Bonding</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Thermodynamics & Thermochemistry</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Chemical Equilibrium</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Ionic Equilibrium</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Liquid Solution & Colligative Properties</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Electrochemistry</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Chemical Kinetics</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Coordination Compounds</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>p block</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>d & f block</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Qualitative Analysis of Cations & Anions</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>IUPAC Nomenclature</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Isomerism</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>GOC</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Haloalkanes & Haloarenes</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Alcohols, Phenols & Ethers</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Aldehyde, Ketone & Carboxylic Acid</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Hydrocarbons</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Amines</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Biomolecules</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Redox</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Short Notes</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>NLM</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1b1LMQBjuSa2qe_9129SqPlpB8dIWF7z3/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1b1LMQBjuSa2qe_9129SqPlpB8dIWF7z3&amp;export=download
-" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
+  <!-- Mathematics Notes Section -->
+  <div class="container">
+    <h2>Mathematics EduNotes</h2>
+    <div class="notes-list">
+      <div class="note-item">
+        <span>FOM</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Quadratic Equation</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Sequence & Series</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Determinants</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Matrices</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Permutations & Combinations</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Binomial Theorem</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Probability</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Complex Number</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Straight Line</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Circle</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Parabola</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Ellipse</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Hyperbola</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Function</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>ITF</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Limits</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Continuity & Differentiability</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>AOD</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Differentiation</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Indefinite Integration</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Definite Integration</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Area Under Curve</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Differential Equation</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Vectors</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>3D</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Sets & Relations</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Statistics</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
+      </div>
+
+      <div class="note-item">
+        <span>Short Notes</span>
+        <div class="button-group">
+          <a href="YOUR_DRIVE_VIEW_LINK_HERE" target="_blank" class="btn btn-view">👁️</a>
+          <a href="YOUR_DRIVE_DOWNLOAD_LINK_HERE" download class="btn btn-download">⬇️</a>
+        </div>
       </div>
     </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Friction</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/17XBAiLbbz1Gpzx8-EhlrFblRxxcqnIk7/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=17XBAiLbbz1Gpzx8-EhlrFblRxxcqnIk7&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-</div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Work Power Energy</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1BleDWCZ3AVFSUo8IkzPLnT4O_eJkj9A9/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1BleDWCZ3AVFSUo8IkzPLnT4O_eJkj9A9&amp;export=download
-" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-   </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Circular Motion</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1_GlQfKoQMOWSsgeDWvf7sKJbikbIYRVl/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding:4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1_GlQfKoQMOWSsgeDWvf7sKJbikbIYRVl&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Modern Physics &amp; Nuclear Physics</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1gH4oCv7f_KwzgTRcBYaNDc918wWSssIP/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1gH4oCv7f_KwzgTRcBYaNDc918wWSssIP&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Semiconductors</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1-VOARZyQl4lqN2ODVKjzNbDyzTT8uB3R/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1-VOARZyQl4lqN2ODVKjzNbDyzTT8uB3R&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>EMW</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1QZZXcvSh2ozgNeSAQ0ZgU5Jv7rWvHWEu/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1QZZXcvSh2ozgNeSAQ0ZgU5Jv7rWvHWEu&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Unit &amp; Dimensions</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1o5OYKCzlr1GwN7TrOgXKLc8yB1HRwozr/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1o5OYKCzlr1GwN7TrOgXKLc8yB1HRwozr&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Error &amp; Measurements</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1VE02vXGL5ipryW5LhYbllT7_s_EJ-VQ8/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1VE02vXGL5ipryW5LhYbllT7_s_EJ-VQ8&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>KTG &amp; Thermodynamics</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1OBtJs2a9R7fE3WWNxXEtUsBaoo5Ivprb/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1OBtJs2a9R7fE3WWNxXEtUsBaoo5Ivprb&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>SHM</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/12UEVzCqfR-o1MDb_SgRrqNuhREdGfoJ2/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=12UEVzCqfR-o1MDb_SgRrqNuhREdGfoJ2&amp;export=download
-" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Current Electricity</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1lYstGroT7an6NoY4ZRul1jKEQgwqtNoN/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1lYstGroT7an6NoY4ZRul1jKEQgwqtNoN&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Heat Transfer</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1ROqiC0_PDBNyPZNODLFX8_UbUeinW2q5/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding:4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1ROqiC0_PDBNyPZNODLFX8_UbUeinW2q5&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Alternating Current</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1QnnLMMMdNmgu6e1yVoTbMeX_S5i3rnaD/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding:4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1QnnLMMMdNmgu6e1yVoTbMeX_S5i3rnaD&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Electrostatics</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1xxf9Wbk5-RN0LfD2L9IHj_LJEHmIbakl/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1xxf9Wbk5-RN0LfD2L9IHj_LJEHmIbakl&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Gravitation</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1OjbEtil7b1PzxsgW9OGo4OlARK6U_stY/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1OjbEtil7b1PzxsgW9OGo4OlARK6U_stY&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Magnetism (EMF)</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1-kVB27lt7r39KZrboc7n8oscU2hTDBxE/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1-kVB27lt7r39KZrboc7n8oscU2hTDBxE&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>EMI</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1OoGnB12yyZb0ly4J9KKkdQGiwz8XUtWc/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1OoGnB12yyZb0ly4J9KKkdQGiwz8XUtWc&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Ray Optics</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1c-oqvI3KgD4LKtZII-ByfIbul3hP2gvG/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding:4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1c-oqvI3KgD4LKtZII-ByfIbul3hP2gvG&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Capacitance</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1z1gDDXrCmpP5oCEFy4sl97YTt4yh4zWb/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1z1gDDXrCmpP5oCEFy4sl97YTt4yh4zWb&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Fluid Mechanics</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1rS-5UiJMcawW04zd5jNtAxVmQhQrNtAz/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1rS-5UiJMcawW04zd5jNtAxVmQhQrNtAz&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-</div>
-      </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Elasticity &amp; Viscosity</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1yyrdObvg3Wdl9eHJDgAPv6rdbloB0OTq/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding:4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1yyrdObvg3Wdl9eHJDgAPv6rdbloB0OTq&amp;export=download
-" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Surface Tension</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1qDBKEYW2iZAeJ8a5v0VO1p08pLknEo4y/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1qDBKEYW2iZAeJ8a5v0VO1p08pLknEo4y&amp;export=download" download="" style="background-color: #16a34a; padding:4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Wave Optics</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/18YpkcRDGiP5PMsS8GaWR_kqCBQYKM9h9/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=18YpkcRDGiP5PMsS8GaWR_kqCBQYKM9h9&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Wave on string &amp; Sound waves</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1UxRwjG_dcgnyofS-hDjEA6YNpVOI9mOK/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1UxRwjG_dcgnyofS-hDjEA6YNpVOI9mOK&amp;export=download
-
-" download="" style="background-color: #16a34a; padding:4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>COM</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1yROVaaXrTY9-YBLH5bCrxNkWfFFGeYUJ/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1yROVaaXrTY9-YBLH5bCrxNkWfFFGeYUJ&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Calorimetry &amp; Thermal Expansion</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1TGlR_oaG4GU5iutZQohUUQnh0R5Bf8nP/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1TGlR_oaG4GU5iutZQohUUQnh0R5Bf8nP&amp;export=download
-" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Rotational Motion</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1mlqZKDESwF6YIsfzKDgAjXaTPAObFBVW/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1mlqZKDESwF6YIsfzKDgAjXaTPAObFBVW&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div></div>
-      <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Short Notes</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1HDzNUYBOP72Y7UGzTqqohMUV96QEPyRs/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️ </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1HDzNUYBOP72Y7UGzTqqohMUV96QEPyRs&amp;export=download
-" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️  </a>
-      </div></div></div></div>
-      <div style="max-width: 800px; margin: 40px auto; font-family: sans-serif;">
-  <h2 style="color: white; text-align: center; font-size: 28px; margin-bottom: 30px;">Chemistry EduNotes</h2>
-
-  <div style="display: flex; flex-direction: column; gap: 8px;">
-  
-    
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Mole Concept</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1wGuXTIlcZkPtGipfx0RtJIEApbZYIuxL/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1wGuXTIlcZkPtGipfx0RtJIEApbZYIuxL&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️</a>
-      </div>
-    </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Atomic Structure</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/108kIgMKcaFnAD0OIianmUXI5NY8QgGiB/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=108kIgMKcaFnAD0OIianmUXI5NY8QgGiB&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️</a>
-      </div>
-    </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Periodic Table</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1Mhfm8O5DN1PrRvfx5KBrXvQnxJdpCBi0/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1Mhfm8O5DN1PrRvfx5KBrXvQnxJdpCBi0&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-    </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Chemical Bonding</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1BW4Pvn2_xRz25W8zAgr32_Dr_qq5Lid5/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 8px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1BW4Pvn2_xRz25W8zAgr32_Dr_qq5Lid5&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-</div>
-
-    
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Thermodynamics &amp; Thermochemistry</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1xN-TVBchGffr2FryFuK5DitpSThfEVmY/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1xN-TVBchGffr2FryFuK5DitpSThfEVmY&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Chemical Equilibrium</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1r2wsQrwAwH0MDaIA-2ncIT4Lm5XMyP_B/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1r2wsQrwAwH0MDaIA-2ncIT4Lm5XMyP_B&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Ionic Equilibrium</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1YfwYbLbdRIuWNfztMhXvDk5Laauctx7W/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1YfwYbLbdRIuWNfztMhXvDk5Laauctx7W&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Liquid Solution &amp; Colligative Properties</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1sdYJae9O-k42JfKGQbhtcEvm9PcrKG2D/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1sdYJae9O-k42JfKGQbhtcEvm9PcrKG2D&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Electrochemistry</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1RVTLgiumd9SPLgyQey2glDal9qa5dpl5/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1RVTLgiumd9SPLgyQey2glDal9qa5dpl5&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      Chemical Kinetics
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1Kfny0CECf8Mr4NyNwjSv6IHPDArFClkW/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1Kfny0CECf8Mr4NyNwjSv6IHPDArFClkW&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Coordination Compounds</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1fLUKOnBAzlbPsGloxLk2v_QCA8yeADBW/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1fLUKOnBAzlbPsGloxLk2v_QCA8yeADBW&amp;export=download
-" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>p block</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1MVI7vyeCsFK5tqQ_fuuGopj6ZhxW_L_l/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1MVI7vyeCsFK5tqQ_fuuGopj6ZhxW_L_l&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>d &amp; f block</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1dPMoVvLwLA8Yrnz_CMs28j5nzdPbAGfZ/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1dPMoVvLwLA8Yrnz_CMs28j5nzdPbAGfZ&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Qualitative Analysis of Cations &amp; Anions</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1R20TKiFzsoNENXVvSFV1sMShV95giGUD/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1R20TKiFzsoNENXVvSFV1sMShV95giGUD&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>IUPAC Nomenclature</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1NmlvvH9OZzD-_D2431ouwaaCxzLdgQaB/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1NmlvvH9OZzD-_D2431ouwaaCxzLdgQaB&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Isomerism</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1iy9oiygaphckJ0id9I24ophulc6192fK/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1iy9oiygaphckJ0id9I24ophulc6192fK&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>GOC</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1Z_y5gz4Cxe78I0GpKGXQqZS-sciZ_-sS/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1Z_y5gz4Cxe78I0GpKGXQqZS-sciZ_-sS&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Haloalkanes &amp; Haloarenes</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1lPi1TutHQ8BwKWHeZXlwgKSHoFlFRSbc/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1lPi1TutHQ8BwKWHeZXlwgKSHoFlFRSbc&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Alcohols, Phenols &amp; Ethers</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1DrXXpvcLfdnzUSAHpfNXHofX3xVKeqB4/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1DrXXpvcLfdnzUSAHpfNXHofX3xVKeqB4&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Aldehyde, Ketone &amp; Carboxylic Acid</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1EmK16_AiL34Q4O1ZFnAU7HbBMYgiM1uk/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1EmK16_AiL34Q4O1ZFnAU7HbBMYgiM1uk&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Hydrocarbons</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1J4_Fnui5S_3qQVS7TSC1sxIjsR1lWRU6/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1J4_Fnui5S_3qQVS7TSC1sxIjsR1lWRU6&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Amines</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/13u_W9i1VNRB7-HcTPEvw8FoVU0SU2YZp/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=13u_W9i1VNRB7-HcTPEvw8FoVU0SU2YZp&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Biomolecules</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1GJajJeDdfU_3_YwgzlPCZQxKHPUkY7qM/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1GJajJeDdfU_3_YwgzlPCZQxKHPUkY7qM&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div></div>
-      <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Redox</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1Egi4dAViVZ_QTBEKPdAm4C1Gp-kCTLul/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1Egi4dAViVZ_QTBEKPdAm4C1Gp-kCTLul&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-
-    </div></div>
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Short Notes</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1zDXVnltM2hCEr_OM5k9lsyyvZIXr2Bvi/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1zDXVnltM2hCEr_OM5k9lsyyvZIXr2Bvi&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-
-    </div></div></div></div>
-    <div style="max-width: 800px; margin: 40px auto; font-family: sans-serif;">
-  <h2 style="color: white; text-align: center; font-size: 28px; margin-bottom: 30px;">Mathematics EduNotes</h2>
-
-  <div style="display: flex; flex-direction: column; gap: 8px;">
-  
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>FOM</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1b1YgZWSwtgeUYJWlBMCobk6lzSBDPeyo/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1b1YgZWSwtgeUYJWlBMCobk6lzSBDPeyo&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Quadratic Equation</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1ikdtLdmtkkj3g9jsmsKUhgGhDoxhjrgZ/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1ikdtLdmtkkj3g9jsmsKUhgGhDoxhjrgZ&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-    </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Sequnce &amp; Series</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1tgC8Y8fxuf3hVBjP0WDr6uuriRpvW8R1/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1tgC8Y8fxuf3hVBjP0WDr6uuriRpvW8R1&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-    </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Determinants</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1SVKJht6Te_oryZqGqEOYI1Icxbp5i1x9/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1SVKJht6Te_oryZqGqEOYI1Icxbp5i1x9&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-    </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Matrices</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1FUdHwjBW9d7w6Ro1Fu6TdXXu0095bFiG/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1FUdHwjBW9d7w6Ro1Fu6TdXXu0095bFiG&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-</div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Permutations &amp; Combinations</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1UTlkU6HNHyyLWbPLobsYpo1HfNN88Et1/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1UTlkU6HNHyyLWbPLobsYpo1HfNN88Et1&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-   </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Binomial Theorem</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1NGRNJU3xzjT_-HTxsNVga1ar7bxY9wN3/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1NGRNJU3xzjT_-HTxsNVga1ar7bxY9wN3&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Probability</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1lVF3H7EMUVEr352Byixtj8lKK50viH3i/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1lVF3H7EMUVEr352Byixtj8lKK50viH3i&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Complex Number</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1Ll4VaTUONjTQZ7eSXvgADlFPG9MkC1nc/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1Ll4VaTUONjTQZ7eSXvgADlFPG9MkC1nc&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Straight Line</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1697Izz3c8AX2W5lBclAdYgKutSiL4iWZ/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1697Izz3c8AX2W5lBclAdYgKutSiL4iWZ&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Circle</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1L01xEwtKHrnA4MxlmztkRMGgjXikojQp/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1L01xEwtKHrnA4MxlmztkRMGgjXikojQp&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Parabola</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1FFzEIaTD1ihDagMzKgdjBwvXzExJ-Jx7/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1FFzEIaTD1ihDagMzKgdjBwvXzExJ-Jx7&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Ellipse</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1in1ZqLbR0aZuVYQDOCQv6zzUNtpxbFZA/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1in1ZqLbR0aZuVYQDOCQv6zzUNtpxbFZA&amp;export=download
-" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Hyperbola</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1kQjaynFTtgcX2vDQKXV4zudStBuwn5_w/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1kQjaynFTtgcX2vDQKXV4zudStBuwn5_w&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Function</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1PsK-c2nORXRLKHCZIBLwLiQPtNjJordR/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1PsK-c2nORXRLKHCZIBLwLiQPtNjJordR&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>ITF</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1eAR7vqW6Fv3u9gc8TxA3hyG779oCiTl-/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1eAR7vqW6Fv3u9gc8TxA3hyG779oCiTl-&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Limits</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1WI-bmy6qr1CuxsgOFNtS27X9bmu6zy7Q/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1WI-bmy6qr1CuxsgOFNtS27X9bmu6zy7Q&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Continuity &amp; Differentiability</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1CY146_X1ki7gnSNC3JlBOM1CMYE6VORn/view?usp=sharing
-" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1CY146_X1ki7gnSNC3JlBOM1CMYE6VORn&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>AOD</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1ZOL3k5xLM0bQdSnpKdfSoPGSYH_MqNzG/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1ZOL3k5xLM0bQdSnpKdfSoPGSYH_MqNzG&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Differentiation</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1-pYwDJA9dxqmayKZWE-VHoZnjgmDAg1t/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1-pYwDJA9dxqmayKZWE-VHoZnjgmDAg1t&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Indefinite Integration</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1QlLSHWGCsdS27a0Rob8AjPRLAJ2EyjgH/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1QlLSHWGCsdS27a0Rob8AjPRLAJ2EyjgH&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Definite Integration</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1Djisc5CpcqOtG3E4NxP0yLkKgIyofdOX/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1Djisc5CpcqOtG3E4NxP0yLkKgIyofdOX&amp;export=download
-" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Area Under Curve</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1QJuAu_9z54YOdkHA_WsA6n0W3Gpigkqk/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1QJuAu_9z54YOdkHA_WsA6n0W3Gpigkqk&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Differential Equation</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1tKGUdXQupyFzjWdAmmB1My4nhN7fw9x5/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1tKGUdXQupyFzjWdAmmB1My4nhN7fw9x5&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Vectors</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1yIRkQ4zNx_ilA-gfEEMgzqN_CA4xdgcl/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1yIRkQ4zNx_ilA-gfEEMgzqN_CA4xdgcl&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>3D</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1-56QtKO63cqIo6e33lFBWDU_VwLfJyTB/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1-56QtKO63cqIo6e33lFBWDU_VwLfJyTB&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div></div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius:6px; color: white;">
-      <span>Sets &amp; Relations</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1mVVlozgfUkdzPuYSB8bpTSHC-NxCre_f/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1mVVlozgfUkdzPuYSB8bpTSHC-NxCre_f&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Statistics</span>
-      <div style="display: flex; gap: 5px;">
-        <a href="https://drive.google.com/file/d/1CgTbgxrNVrYzXlE_9Dp0gxmBzZy00DSw/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1CgTbgxrNVrYzXlE_9Dp0gxmBzZy00DSw&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div>
-
-    
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #2d2d2d; padding: 8px 10px; border-radius: 6px; color: white;">
-      <span>Short Notes</span>
-      <div style="display: flex; gap: 5px;">
-        <a href=" https://drive.google.com/file/d/1dMzlBk7XcZUfiUrfpGujNTiovU68CcAe/view?usp=sharing" target="_blank" style="background-color: #2563eb; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">👁️</a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1dMzlBk7XcZUfiUrfpGujNTiovU68CcAe&amp;export=download" download="" style="background-color: #16a34a; padding: 4px 7px; color: white; border-radius: 4px; text-decoration: none;">⬇️ </a>
-      </div>
-      </div></div></div>
+  </div>
 </body>
 </html>
